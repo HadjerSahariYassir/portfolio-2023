@@ -1,0 +1,80 @@
+.app__home{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.app__centerText-container{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   height: 100vh;
+  /* border: 2px solid red*/
+}
+
+.app__centerText-elmt{
+    color: var(--neutral-2);
+    border: .1rem solid #20222e;
+    border-radius: 2rem;
+    background: linear-gradient(
+        180deg,rgba(35,37,49,.3),rgba(15,15,24,.2));
+    height: 100px;
+    text-align: center;
+    padding: 1rem;
+    font-weight: 200;
+    font-size: 5vh;
+}
+
+.app__centerText-elmt span{
+    font-weight: 700;
+    color: var(--neutral-1)
+}
+
+.app__navbar{
+    width: 150px;
+    height: 64vh;
+   /* background: linear-gradient(180deg,rgba(35,37,49,.3),rgba(15,15,24,.2));
+    border: .1rem solid #20222e;
+    border-radius: 2rem;*/
+    position: absolute;
+    top: +35vh;
+    right: 0;
+    z-index: 2000000000000000;
+    transition: right .20s ease-in-out  .35s ease-in-out,backdrop-filter .35s ease-in-out;
+    transition-property: right  backdrop-filter;
+    transition-duration: 0.35s, 0.35s, 0.35s;
+    transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
+    transition-delay: 0s, 0s, 0s;
+}
+
+.app__navbar-all{
+    width: 350px;
+    height: 64vh;
+   background: linear-gradient(180deg,rgba(35,37,49,.3),rgba(15,15,24,.2));
+    border: .1rem solid #20222e;
+    border-radius: 2rem;
+    position: absolute;
+    top: +35vh;
+    right: 0;
+    z-index: 2000000000000000;
+   // transition: 3s ease-in-out
+}
+
+.app__navbar-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--neutral-1);
+    font-weight: 400;
+    font-size: 3vh;
+    height: 100%
+}
+
+.app__navbar-list-elm{
+     padding: 2rem;
+     height: 20%
+}
+@media screen and (max-width: 768px) {
+    
+}
