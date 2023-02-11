@@ -1,0 +1,19 @@
+.about-animated{
+    background-color: rgb(138, 61, 215);
+    height: 0vh;
+    transition-duration: 5s;
+    transition-delay: .2s; 
+    transition-property: background-color height;
+    transition-timing-function: ease-in-out;
+}
+
+.about-animated:hover{
+    background-color: brown;
+    height: 100vh
+}
+
+.about-transition-text{
+    background-color: rgb(138, 61, 215);
+    height: 0%;
+    bottom: 0px;
+}
