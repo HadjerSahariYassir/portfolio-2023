@@ -1,19 +1,48 @@
 .about-animated{
-    background-color: rgb(138, 61, 215);
-    height: 0vh;
-    transition-duration: 5s;
-    transition-delay: .2s; 
-    transition-property: background-color height;
-    transition-timing-function: ease-in-out;
+    overflow: hidden;
+
+    &::after{
+        
+   
+   // animation: mymove 10s linear;
+   // transition-duration: 5s;
+    //transition-delay: .0s; 
+  //  transition-property: background height;
+   // transition-timing-function: ease-in-out;
+   content:"";
+   display: block;
+   position: absolute;
+   top:0%;
+   bottom:100%;
+   left:0;right:0;
+   
+   background:yellow;
+   transition: 7s ease all;
+    }
+    &:hover {
+        &::after {
+          bottom:0;
+          
+          background: black;
+        }
+      }
+    
 }
 
-.about-animated:hover{
-    background-color: brown;
-    height: 100vh
-}
-
+/*.about-animated:hover{
+    background: yellowgreen;
+   background-position:top;
+   height: 100vh
+}*/
 .about-transition-text{
     background-color: rgb(138, 61, 215);
     height: 0%;
     bottom: 0px;
 }
+
+@keyframes mymove {
+    from {background-color: rgb(17, 17, 15);}
+    to {background-color: yellow;}
+    from {height: 0vh;}
+    to {height: 100vh;}
+  }
